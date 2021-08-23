@@ -1,0 +1,110 @@
+
+
+:root{
+  --aubergine-color:rgb(123,45,89);
+  --aubergine-color-opacity:rgba(123,45,89,0.200);
+  --white-color:rgb(252,246,249);
+  --gray-color:rgb(70,70,70);
+  --gray-color-opacity:rgba(70,70,70,0.200);
+}
+body{
+  font-family: 'Tahoma';
+  margin: 0;
+}
+section{
+  height: 25vh;
+  display: flex;
+  justify-content:space-evenly;
+  margin-top: 5vh;
+}
+section article{
+  width: 25vh;
+  border: 5px solid var(--aubergine-color);
+  padding: 1%;
+  border-radius: 10%;
+  position: relative;
+  overflow-x: hidden;
+}
+section article h5{
+  padding-bottom: 2%;
+  padding-left: 8%;
+  border-bottom: 2px solid var(--gray-color);
+}
+header{
+  display: flex;
+  align-items: center;
+  background-color: var(--aubergine-color);
+  height: 12vh;
+}
+header h1{
+  width: 100%;
+  text-align: center;
+  text-shadow: 0 -2px var(--gray-color);
+  color: var(--white-color);
+}
+button.favo{
+  position: fixed;
+  background-color: var(--white-color);
+  text-decoration: none;
+  display: block;
+  padding: 1.2% 2.0%;
+  color: var(--aubergine-color);
+  font-weight: bolder;
+  bottom: 1.4%;
+  left: 1.0%;
+  border-radius: 250%;
+
+}
+.tool{ 
+    /* position: fixed; */
+    background-color: var(--white-color);
+    text-decoration: none;
+    display: block;
+    padding: 1.0%;
+    color: var(--aubergine-color);
+    font-weight: bolder;
+    top: 14%;
+    left: 10%;
+    border-radius: 20%;
+    /* height: 50px;
+    width: 75px; */
+}
+
+ .list{
+  width: 18%;
+  display: flex; 
+  height: 50vh; 
+  flex-direction: column;
+   background-color: var(--aubergine-color); 
+   color: var(--white-color);
+ }
+ .list a{
+  display: block;
+ /* padding: 10px 4px; */
+  text-decoration: none;
+  color:white;
+  font-family: 'Tahoma';
+  font-size: larger; 
+}
+.list a:hover,.list a.active{
+  background-color: var(--gray-color-opacity);
+  color: var(--white-color);
+  font-weight: 600;
+}  
+input{
+  font-size: larger;
+}
+.no-border{
+  border: none;
+  
+}
+input.no-border:focus{
+  outline: none;
+}
+#titel{
+  width: 100%;
+  text-align: center;
+  text-shadow: 0 -2px var(--gray-color);
+  color: var(--aubergine-color);
+}
+
